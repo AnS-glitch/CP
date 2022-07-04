@@ -1,3 +1,4 @@
+//Finding roots using Newton-Raphson method
 #include<iostream>
 #include<cmath>
 #define EPSILION .00001
