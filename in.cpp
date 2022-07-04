@@ -1,3 +1,4 @@
+//Numerical Integration(Calculating)
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -35,7 +36,17 @@ for (i=1;i<n;i++)	{
 return (3*h/8)*(function(a)+2*I+3*J+function(b));
 }
 
+double trapezoidal(double a,double b,double n)		{
+int i;
+double I=0;
+double h=(b-a)/n;
+for(i=1;i<n;i++)	{
+	I=I+function(a+i*h);
+	}
+return (h/2)*(function(a)+function(b)+2*I);
+}
+
 int main()	{
-cout<<"1/3 Rule "<<simpson1_3(0,1.56,30)<<endl<<"3/8 Rule "<<simpson3_8(0,1.56,30)<<endl;
+cout<<"1/3 Rule "<<simpson1_3(0,1.56,30)<<endl<<"3/8 Rule "<<simpson3_8(0,1.56,30)<<endl<<"Trapezoidal Rule "<<trapezoidal(0,1.56,30)<<endl;
 return 0;
 }
