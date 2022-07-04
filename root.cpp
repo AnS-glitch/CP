@@ -1,3 +1,4 @@
+//Root finding(bisection)
 #include <iostream>
 #include <cmath>
 #define EPSILON 0.000001
