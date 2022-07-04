@@ -1,3 +1,4 @@
+//Calculating differential of a function numerically
 #include<iostream>
 #include<cmath>
 #define epsilon .0001
