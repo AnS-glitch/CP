@@ -1,3 +1,4 @@
+//Secant method
 #include<iostream>
 #include<cmath>
 #define EPSILON .00001
