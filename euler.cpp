@@ -13,8 +13,8 @@ double y=y0;
 ofstream file;
 file.open("Euler.dat");
 for(double t=t0;t<=5;t+=h)	{
-	file<<t<<" "<<y<<" "<<(1+.5*exp(-4*t)-.5*exp(-2*t))<<endl;
-	y+=h*function(t,y);
+	file<<t<<" "<<y<<" "<<(1+.5*exp(-4*t)-.5*exp(-2*t))<<endl;	//y is approximate solution
+	y+=h*function(t,y);						//(1+.5*exp(-4*t)-.5*exp(-2*t)) is exact solution 
 	}
 file.close();
 }
