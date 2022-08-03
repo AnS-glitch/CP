@@ -3,7 +3,7 @@
 #include<fstream>
 using namespace std;
 double function(double x,double z,int m)	{
-return (1/M_PI)*cos(m*x-z*sin(x));
+return (1/M_PI)*cos(m*x-z*sin(x));		//Bessel function
 }
 
 double simpson1_3(double a, double b,int n,double z,int m)		{
